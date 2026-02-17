@@ -1,11 +1,16 @@
-import PartenairesList from "@/app/components/partenaires/PartenairesList";
+import { Suspense } from "react";
+import PartenairesWrapper from "./PartenairesWrapper";
 
 export default function PartenairesManagement() {
+    return (
+        <>
+            <h1 className="text-xl font-bold">
+                Gestion des partenaires
+            </h1>
 
-  return (
-    <>
-      <h1 className="text-xl font-bold">Gestion des partenaires</h1>
-      <PartenairesList/>
-    </>
-  );
+            <Suspense fallback={<p>Chargement...</p>}>
+                <PartenairesWrapper />
+            </Suspense>
+        </>
+    );
 }
