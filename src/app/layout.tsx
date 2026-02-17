@@ -34,9 +34,9 @@ export default function RootLayout({
 
   const menuItems = [
     {
-      key: "/tarifs",
+      key: "/partenaires",
       icon: <BankOutlined />,
-      label: "Gestion des tarifs",
+      label: "Partenaires",
     },
   ];
 
